@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp E2EE Demo - Offline & Working</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>WhatsApp-Style End-to-End Encryption Demo</h1>
+
+  <p>Open this page in <b>two tabs</b> → Person A (left) & Person B (right)</p>
+
+  <div class="box">
+
+    <h2>Person A</h2>
+    <div class="key">Public Key: 3081... (512-bit RSA)</div>
+    <textarea id="msgA" placeholder="Type message..."></textarea>
+    
+    <button onclick="sendA()">Send to Person B</button>
+    <div id="chatA" class="chat"></div>
+  </div>
+
+  <div class="box">
+    
+    <h2>Person B</h2>
+    <div class="key">Public Key: 3081... (512-bit RSA)</div>
+    
+    <textarea id="msgB" placeholder="Type message..."></textarea>
+    <button onclick="sendB()">Send to Person A</button>
+    
+    <div id="chatB" class="chat"></div>
+  </div>
+
+  <div class="footer">
+    
+    The encrypted text in the middle is total gibberish — only the real receiver can read it!
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
