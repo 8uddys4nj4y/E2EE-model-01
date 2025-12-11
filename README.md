@@ -1,6 +1,8 @@
 # E2EE-model-01
 # E2EE Demo 
 
+go to https://e2ee-01.netlify.app for web view
+
 Demo showing how end-to-end encryption works – exactly like WhatsApp & Signal.
 
 - 100% offline (no internet needed)
